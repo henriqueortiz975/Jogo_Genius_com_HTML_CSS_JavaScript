@@ -132,23 +132,29 @@ nav a:hover, nav a.active{
 }
 
 .Verde{
-    background:#39ff14;
+    background:#30da12;
     border-top-left-radius:100%;
+    border: 5px solid #26ff00;
 }
 
 .Vermelho{
     background:#ff3131;
     border-top-right-radius:100%;
+    border: 5px solid rgb(233, 25, 25);
 }
 
 .Amarelo{
-    background:#ffcc00;
+    background:#f0c106;
     border-bottom-left-radius:100%;
+    border: 5px solid #ffcc00;
+    box-shadow: 10px 10px 10px 10px grey;
+    
 }
 
 .Azul{
     background:#1e6fff;
     border-bottom-right-radius:100%;
+    border: 5px solid #005eff;
 }
 
 .Centro{
@@ -201,7 +207,7 @@ nav a:hover, nav a.active{
 
 .Rodadas_Pontos{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     text-align:center;
     gap:20px;
 }
