@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:radial-gradient(circle at left, #081c5a 0%, #030617 55%), linear-gradient(135deg,#020617,#090b1f);
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    width:100%;
+    min-height:70px;
+    padding:0 60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    background:rgba(0,0,0,.15);
+    backdrop-filter:blur(10px);
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.logo span{
+    color:#4da3ff;
+}
+
+nav{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:#d9d9d9;
+    font-size:1rem;
+    transition:.3s;
+}
+
+nav a:hover, nav a.active{
+    color:#4da3ff;
+}
+
+.HeaderIniciar_Escuro{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.ModoEscuro{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#0c1025;
+    cursor:pointer;
+}
+
+.Iniciar{
+    background:#3b82f6;
+    border:none;
+    color:white;
+    padding:14px 28px;
+    border-radius:14px;
+    font-size:1rem;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.Iniciar:hover{
+    background:#2563eb;
+}
+
+.Container{
+    width:100%;
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:1fr 420px;
+    gap:40px;
+    flex:1;
+}
+
+.Esquerda{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.Jogo{
+    width:430px;
+    height:430px;
+    background:#111827;
+    border-radius:50%;
+    position:relative;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:14px;
+    padding:18px;
+    box-shadow:0 0 40px rgba(0,0,0,.7), inset 0 0 30px rgba(255,255,255,.05);
+}
+
+.Cor{
+    cursor:pointer;
+    transition:.2s;
+}
+
+.Cor:hover{
+    filter:brightness(1.9);
+}
+
+.Verde{
+    background:#39ff14;
+    border-top-left-radius:100%;
+}
+
+.Vermelho{
+    background:#ff3131;
+    border-top-right-radius:100%;
+}
+
+.Amarelo{
+    background:#ffcc00;
+    border-bottom-left-radius:100%;
+}
+
+.Azul{
+    background:#1e6fff;
+    border-bottom-right-radius:100%;
+}
+
+.Centro{
+    position:absolute;
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background:#0f172a;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    border:14px solid #151b2f;
+    box-shadow:0 0 20px rgba(0,0,0,.8);
+    z-index:10;
+}
+
+.Centro h1{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.Direita{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.Card{
+    background:rgba(15,23,42,.75);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:22px;
+    backdrop-filter:blur(14px);
+    box-shadow:0 0 25px rgba(0,0,0,.25);
+}
+
+.Card hr{
+    margin-bottom:20px;
+}
+
+.Card h2{
+    font-size:1.5rem;
+    margin-bottom:15px;
+    color:#f3f4f6;
+}
+
+.Rodadas_Pontos{
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+    gap:20px;
+}
+
+.Rodadas_Pontos div h3{
+    color:#9ca3af;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.Rodadas_Pontos div span{
+    font-size:3rem;
+    font-weight:700;
+}
+
+.Rodadas{
+    color:#4da3ff;
+}
+
+.Pontos{
+    color:#a855f7;
+}
+
+.Card2 ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.Card2 li{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    color:#d1d5db;
+    line-height:1.6;
+}
+
+.Explicacao{
+    min-width:29px;
+    height:29px;
+    border-radius:50%;
+    background:#2563eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
+}
+
+
+footer{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    color:#bdbdbd;
+    background:#050816;
+    text-align:center;
+    flex-wrap:wrap;
+}
+
+@media (max-width: 1100px){
+
+    .Container{
+        grid-template-columns:1fr;
+        justify-items:center;
+    }
+
+    .Direita{
+        width:100%;
+        max-width:700px;
+    }
+}
+
+@media (max-width: 800px){
+
+    header{
+        padding:20px;
+        justify-content:center;
+        text-align:center;
+    }
+
+    nav{
+        justify-content:center;
+        gap:20px;
+    }
+
+    .logo{
+        font-size:1.7rem;
+    }
+
+    .Jogo{
+        width:340px;
+        height:340px;
+    }
+
+    .Centro{
+        width:130px;
+        height:130px;
+    }
+
+    .Centro h1{
+        font-size:1.5rem;
+    }
+
+    .Rodadas_Pontos div span{
+        font-size:2.2rem;
+    }
+}
+
+@media (max-width: 500px){
+
+    .Container{
+        padding:15px;
+    }
+
+    .Jogo{
+        width:280px;
+        height:280px;
+        gap:10px;
+        padding:12px;
+    }
+
+    .Centro{
+        width:105px;
+        height:105px;
+        border-width:10px;
+    }
+
+    .Centro h1{
+        font-size:1.2rem;
+    }
+
+    .Card{
+        padding:18px;
+    }
+
+    .Card h2{
+        font-size:1.2rem;
+    }
+
+    .Rodadas_Pontos{
+        flex-direction:column;
+    }
+
+    .Rodadas_Pontos div span{
+        font-size:2rem;
+    }
+
+    .Iniciar{
+        padding:12px 20px;
+        font-size:.9rem;
+    }
+
+    .ModoEscuro{
+        width:42px;
+        height:42px;
+    }
+}
