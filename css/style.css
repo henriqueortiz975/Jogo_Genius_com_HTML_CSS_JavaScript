@@ -56,22 +56,22 @@ nav a:hover, nav a.active{
     color:#4da3ff;
 }
 
-.HeaderIniciar_Escuro{
+.HeaderIniciar_Rank{
     display:flex;
     align-items:center;
     gap:18px;
 }
 
-.ModoEscuro{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    border:1px solid rgba(255,255,255,.1);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#0c1025;
+.Rank{
+    background:#f6673b;
+    border:none;
+    color:white;
+    padding:14px 28px;
+    border-radius:14px;
+    font-size:1rem;
     cursor:pointer;
+    font-weight:600;
+    transition:.3s;    
 }
 
 .Iniciar{
@@ -134,27 +134,25 @@ nav a:hover, nav a.active{
 .Verde{
     background:#30da12;
     border-top-left-radius:100%;
-    border: 5px solid #26ff00;
+    transition: 0.8s;
 }
 
 .Vermelho{
     background:#ff3131;
     border-top-right-radius:100%;
-    border: 5px solid rgb(233, 25, 25);
+    transition: 0.8s;
 }
 
 .Amarelo{
     background:#f0c106;
     border-bottom-left-radius:100%;
-    border: 5px solid #ffcc00;
-    box-shadow: 10px 10px 10px 10px grey;
-    
+    transition: 0.8s;
 }
 
 .Azul{
     background:#1e6fff;
     border-bottom-right-radius:100%;
-    border: 5px solid #005eff;
+    transition: 0.8s;
 }
 
 .Centro{
@@ -170,7 +168,6 @@ nav a:hover, nav a.active{
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    border:14px solid #151b2f;
     box-shadow:0 0 20px rgba(0,0,0,.8);
     z-index:10;
 }
