@@ -91,10 +91,6 @@ O tabuleiro deve ter:
 - layout responsivo;
 - aparência profissional.
 
-Exemplo:
-
-![Genius.png](attachment:fbcdfcaf-5a03-473b-a749-729f8dad9703:Genius.png)
-
 # ETAPA 3 — Lógica básica com JavaScript
 
 ## Objetivo

@@ -13,6 +13,66 @@ body{
     flex-direction:column;
 }
 
+.TelaLogin{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+    backdrop-filter:blur(10px);
+}
+
+.LoginBox{
+    width:400px;
+    background:#0f172a;
+    padding:40px;
+    border-radius:25px;
+    border:1px solid rgba(255,255,255,.08);
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    box-shadow:0 0 40px rgba(0,0,0,.5);
+}
+
+.LoginBox h1{
+    text-align:center;
+    font-size:2.5rem;
+}
+
+.LoginBox p{
+    text-align:center;
+    color:#cbd5e1;
+}
+
+.InputNome{
+    height:55px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    padding:0 15px;
+    background:#111827;
+    color:white;
+    font-size:1rem;
+}
+
+.BotaoEntrar{
+    height:55px;
+    border:none;
+    border-radius:14px;
+    background:#3b82f6;
+    color:white;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.BotaoEntrar:hover{
+    background:#2563eb;
+}
+
 header{
     width:100%;
     min-height:70px;
@@ -39,27 +99,9 @@ header{
     color:#4da3ff;
 }
 
-nav{
-    display:flex;
-    gap:40px;
-    flex-wrap:wrap;
-}
-
-nav a{
-    text-decoration:none;
-    color:#d9d9d9;
-    font-size:1rem;
-    transition:.3s;
-}
-
-nav a:hover, nav a.active{
-    color:#4da3ff;
-}
-
 .HeaderIniciar_Rank{
     display:flex;
-    align-items:center;
-    gap:18px;
+    gap:15px;
 }
 
 .Rank{
@@ -74,20 +116,22 @@ nav a:hover, nav a.active{
     transition:.3s;    
 }
 
-.Iniciar{
-    background:#3b82f6;
+button{
     border:none;
-    color:white;
     padding:14px 28px;
     border-radius:14px;
+    color:white;
     font-size:1rem;
+    font-weight:700;
     cursor:pointer;
-    font-weight:600;
-    transition:.3s;
 }
 
-.Iniciar:hover{
-    background:#2563eb;
+.Rank{
+    background:#f97316;
+}
+
+.Iniciar{
+    background:#3b82f6;
 }
 
 .Container{
@@ -103,9 +147,8 @@ nav a:hover, nav a.active{
 
 .Esquerda{
     display:flex;
-    flex-direction:column;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 }
 
 .Jogo{
@@ -119,7 +162,6 @@ nav a:hover, nav a.active{
     grid-template-rows:1fr 1fr;
     gap:14px;
     padding:18px;
-    box-shadow:0 0 40px rgba(0,0,0,.7), inset 0 0 30px rgba(255,255,255,.05);
 }
 
 .Cor{
@@ -127,32 +169,24 @@ nav a:hover, nav a.active{
     transition:.2s;
 }
 
-.Cor:hover{
-    filter:brightness(1.9);
-}
-
 .Verde{
     background:#30da12;
     border-top-left-radius:100%;
-    transition: 0.8s;
 }
 
 .Vermelho{
     background:#ff3131;
     border-top-right-radius:100%;
-    transition: 0.8s;
 }
 
 .Amarelo{
     background:#f0c106;
     border-bottom-left-radius:100%;
-    transition: 0.8s;
 }
 
 .Azul{
     background:#1e6fff;
     border-bottom-right-radius:100%;
-    transition: 0.8s;
 }
 
 .Centro{
@@ -165,11 +199,8 @@ nav a:hover, nav a.active{
     left:50%;
     transform:translate(-50%,-50%);
     display:flex;
-    align-items:center;
     justify-content:center;
-    flex-direction:column;
-    box-shadow:0 0 20px rgba(0,0,0,.8);
-    z-index:10;
+    align-items:center;
 }
 
 .Centro h1{
@@ -185,39 +216,18 @@ nav a:hover, nav a.active{
 
 .Card{
     background:rgba(15,23,42,.75);
-    border:1px solid rgba(255,255,255,.08);
     border-radius:22px;
     padding:22px;
-    backdrop-filter:blur(14px);
-    box-shadow:0 0 25px rgba(0,0,0,.25);
-}
-
-.Card hr{
-    margin-bottom:20px;
 }
 
 .Card h2{
-    font-size:1.5rem;
     margin-bottom:15px;
-    color:#f3f4f6;
 }
 
 .Rodadas_Pontos{
-    display:flex;
-    justify-content:space-around;
+    display:grid;
     text-align:center;
-    gap:20px;
-}
-
-.Rodadas_Pontos div h3{
-    color:#9ca3af;
-    margin-bottom:10px;
-    font-weight:500;
-}
-
-.Rodadas_Pontos div span{
-    font-size:3rem;
-    font-weight:700;
+    grid-template-columns: 2fr 2fr;
 }
 
 .Rodadas{
@@ -226,6 +236,11 @@ nav a:hover, nav a.active{
 
 .Pontos{
     color:#a855f7;
+}
+
+.Rodadas_Pontos span{
+    font-size:3rem;
+    font-weight:700;
 }
 
 .Card2 ul{
@@ -249,11 +264,132 @@ nav a:hover, nav a.active{
     border-radius:50%;
     background:#2563eb;
     display:flex;
-    align-items:center;
     justify-content:center;
-    font-weight:900;
+    align-items:center;
 }
 
+.CardRank{
+    display:none;
+}
+
+.ListaRank{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:20px;
+}
+
+.ListaRank li{
+    background:#111827;
+    padding:15px;
+    border-radius:12px;
+}
+
+.TelaDerrota{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.8);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    backdrop-filter:blur(8px);
+}
+
+.BoxDerrota{
+    width:420px;
+    background:#0f172a;
+    border-radius:25px;
+    padding:40px;
+    border:1px solid rgba(255,255,255,.08);
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    text-align:center;
+    box-shadow:0 0 40px rgba(0,0,0,.5);
+}
+
+.BoxDerrota h1{
+    font-size:2.5rem;
+    color:#ff4d4d;
+}
+
+.TextoDerrota{
+    color:#cbd5e1;
+    font-size:1.1rem;
+}
+
+.InfosDerrota{
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
+}
+
+.InfosDerrota h3{
+    color:#94a3b8;
+    margin-bottom:10px;
+}
+
+.InfosDerrota span{
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.RodadaFinal{
+    color:#3b82f6;
+}
+
+.PontosFinais{
+    color:#a855f7;
+}
+
+.BotaoReiniciar{
+    height:55px;
+    border:none;
+    border-radius:14px;
+    background:#3b82f6;
+    color:white;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.BotaoReiniciar p{
+    transform: translateY(-3px);
+}
+
+.BotaoReiniciar:hover{
+    background:#2563eb;
+}
+
+
+.BotoesDerrota{
+    display:flex;
+    gap:15px;
+}
+
+.BotaoVoltar{
+    flex:1;
+    height:55px;
+    border:none;
+    border-radius:14px;
+    background:#f97316;
+    color:white;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.BotaoVoltar:hover{
+    background:#ea580c;
+}
+
+.BotaoReiniciar{
+    flex:1;
+}
 
 footer{
     border-top:1px solid rgba(255,255,255,.08);
@@ -287,11 +423,6 @@ footer{
         padding:20px;
         justify-content:center;
         text-align:center;
-    }
-
-    nav{
-        justify-content:center;
-        gap:20px;
     }
 
     .logo{
@@ -344,6 +475,10 @@ footer{
         padding:18px;
     }
 
+    .BoxDerrota{
+        width: 350px;
+    }
+
     .Card h2{
         font-size:1.2rem;
     }
@@ -359,10 +494,5 @@ footer{
     .Iniciar{
         padding:12px 20px;
         font-size:.9rem;
-    }
-
-    .ModoEscuro{
-        width:42px;
-        height:42px;
     }
 }

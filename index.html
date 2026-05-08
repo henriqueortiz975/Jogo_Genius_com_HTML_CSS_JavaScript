@@ -7,78 +7,122 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class = "logo">
-            <h3>Jogo <span>Genius</span></h3>    
+
+    <div class="TelaLogin">
+
+        <div class="LoginBox">
+
+            <h1>Jogo Genius</h1>
+
+            <p>Digite seu nome para jogar</p>
+
+            <input
+            type="text"
+            class="InputNome"
+            placeholder="Seu nome">
+
+            <button class="BotaoEntrar">
+                Entrar
+            </button>
+
         </div>
 
-        <div class = "HeaderIniciar_Rank">
-            <button class = "Rank">Rank</button>
-            <button class = "Iniciar">Iniciar Jogo</button>
+    </div>
+
+    <header>
+
+        <div class="logo">
+            <h3>Jogo <span>Genius</span></h3>
         </div>
+
+        <div class="HeaderIniciar_Rank">
+
+            <button class="Rank">
+                Rank
+            </button>
+
+            <button class="Iniciar">
+                Iniciar Jogo
+            </button>
+
+        </div>
+
     </header>
 
-    <main class = "Container">
-        <section class = "Esquerda">
-            <div class = "Jogo">
+    <main class="Container">
 
-                <div class = "Cor Verde"></div>
-                <div class = "Cor Vermelho"></div>
-                <div class = "Cor Amarelo"></div>
-                <div class = "Cor Azul"></div>
+        <section class="Esquerda">
 
-                <div class = "Centro">
-                    <h1>GENIUS</h1>
+            <div class="Jogo">
+
+                <div class="Cor Verde"></div>
+                <div class="Cor Vermelho"></div>
+                <div class="Cor Amarelo"></div>
+                <div class="Cor Azul"></div>
+
+                <div class="Centro">
+                    <h1 class = "MensagemCentro">GENIUS</h1>
                 </div>
 
             </div>
 
         </section>
 
-        <aside class = "Direita">
+        <aside class="Direita">
 
-            <div class = "Card">
+            <div class="Card CardPontuacao">
 
-                <div class = "Rodadas_Pontos">
+                <div class="Rodadas_Pontos">
+
                     <div>
                         <h3>RODADA</h3>
-                        <span class = "Rodadas">0</span>
+                        <span class="Rodadas">0</span>
                     </div>
 
                     <div>
                         <h3>PONTOS</h3>
-                        <span class = "Pontos">0</span>
+                        <span class="Pontos">0</span>
                     </div>
+
                 </div>
-                
+
             </div>
 
-            <div class = "Card Card2">
+            <div class="Card Card2">
+
                 <h2>❓ COMO JOGAR</h2>
 
                 <ul>
 
                     <li>
-                        <div class = "Explicacao">1</div>
-                        Clique em "Iniciar Jogo" para começar.
+                        <div class="Explicacao">1</div>
+                        Clique em "Iniciar Jogo".
                     </li>
 
                     <li>
-                        <div class = "Explicacao">2</div>
-                        Observe a sequência de cores.
+                        <div class="Explicacao">2</div>
+                        Observe a sequência.
                     </li>
 
                     <li>
-                        <div class = "Explicacao">3</div>
-                        Repita a sequência clicando nas cores.
+                        <div class="Explicacao">3</div>
+                        Repita as cores.
                     </li>
 
                     <li>
-                        <div class = "Explicacao">4</div>
-                        Cada rodada adiciona uma nova cor.
+                        <div class="Explicacao">4</div>
+                        A sequência aumenta.
                     </li>
 
                 </ul>
+
+            </div>
+
+            <div class="Card CardRank">
+
+                <h2>🏆 RANKING</h2>
+
+                <ul class="ListaRank"></ul>
 
             </div>
 
@@ -89,6 +133,39 @@
     <footer>
         © 2026 Jogo Genius. Desenvolvido para Programação Website I.
     </footer>
+
+    <div class="TelaDerrota">
+
+        <div class="BoxDerrota">
+
+            <h1>Você Perdeu</h1>
+            <p class="TextoDerrota">Você errou a sequência.</p>
+
+            <div class="InfosDerrota">
+
+                <div>
+                    <h3>RODADA</h3>
+                    <span class="RodadaFinal">0</span>
+                </div>
+
+                <div>
+                    <h3>PONTOS</h3>
+                    <span class="PontosFinais">0</span>
+                </div>
+
+            </div>
+
+            <div class="BotoesDerrota">
+
+                <button class="BotaoVoltar">Voltar</button>
+
+                <button class="BotaoReiniciar"><p>Jogar novamente</p></button>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <script src = "js/script.js"></script>
     
