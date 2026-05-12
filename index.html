@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jogo Genius</title>
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+
+    <!-- LOGIN -->
 
     <div class="TelaLogin">
 
@@ -21,6 +27,14 @@
             class="InputNome"
             placeholder="Seu nome">
 
+            <select class="SelecionarModo">
+
+                <option value="facil">Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Difícil</option>
+
+            </select>
+
             <button class="BotaoEntrar">
                 Entrar
             </button>
@@ -28,6 +42,8 @@
         </div>
 
     </div>
+
+    <!-- HEADER -->
 
     <header>
 
@@ -49,7 +65,11 @@
 
     </header>
 
+    <!-- CONTAINER -->
+
     <main class="Container">
+
+        <!-- ESQUERDA -->
 
         <section class="Esquerda">
 
@@ -59,14 +79,18 @@
                 <div class="Cor Vermelho"></div>
                 <div class="Cor Amarelo"></div>
                 <div class="Cor Azul"></div>
+                <div class="Cor Roxo"></div>
+                <div class="Cor Rosa"></div>
 
                 <div class="Centro">
-                    <h1 class = "MensagemCentro">GENIUS</h1>
+                    <h1 class="MensagemCentro">GENIUS</h1>
                 </div>
 
             </div>
 
         </section>
+
+        <!-- DIREITA -->
 
         <aside class="Direita">
 
@@ -75,18 +99,30 @@
                 <div class="Rodadas_Pontos">
 
                     <div>
+
                         <h3>RODADA</h3>
-                        <span class="Rodadas">0</span>
+
+                        <span class="Rodadas">
+                            0
+                        </span>
+
                     </div>
 
                     <div>
+
                         <h3>PONTOS</h3>
-                        <span class="Pontos">0</span>
+
+                        <span class="Pontos">
+                            0
+                        </span>
+
                     </div>
 
                 </div>
 
             </div>
+
+            <!-- COMO JOGAR -->
 
             <div class="Card Card2">
 
@@ -95,28 +131,50 @@
                 <ul>
 
                     <li>
-                        <div class="Explicacao">1</div>
+
+                        <div class="Explicacao">
+                            1
+                        </div>
+
                         Clique em "Iniciar Jogo".
+
                     </li>
 
                     <li>
-                        <div class="Explicacao">2</div>
+
+                        <div class="Explicacao">
+                            2
+                        </div>
+
                         Observe a sequência.
+
                     </li>
 
                     <li>
-                        <div class="Explicacao">3</div>
+
+                        <div class="Explicacao">
+                            3
+                        </div>
+
                         Repita as cores.
+
                     </li>
 
                     <li>
-                        <div class="Explicacao">4</div>
+
+                        <div class="Explicacao">
+                            4
+                        </div>
+
                         A sequência aumenta.
+
                     </li>
 
                 </ul>
 
             </div>
+
+            <!-- RANK -->
 
             <div class="Card CardRank">
 
@@ -130,36 +188,57 @@
 
     </main>
 
+    <!-- FOOTER -->
+
     <footer>
         © 2026 Jogo Genius. Desenvolvido para Programação Website I.
     </footer>
+
+    <!-- DERROTA -->
 
     <div class="TelaDerrota">
 
         <div class="BoxDerrota">
 
             <h1>Você Perdeu</h1>
-            <p class="TextoDerrota">Você errou a sequência.</p>
+
+            <p class="TextoDerrota">
+                Você errou a sequência.
+            </p>
 
             <div class="InfosDerrota">
 
                 <div>
+
                     <h3>RODADA</h3>
-                    <span class="RodadaFinal">0</span>
+
+                    <span class="RodadaFinal">
+                        0
+                    </span>
+
                 </div>
 
                 <div>
+
                     <h3>PONTOS</h3>
-                    <span class="PontosFinais">0</span>
+
+                    <span class="PontosFinais">
+                        0
+                    </span>
+
                 </div>
 
             </div>
 
             <div class="BotoesDerrota">
 
-                <button class="BotaoVoltar">Voltar</button>
+                <button class="BotaoVoltar">
+                    Voltar
+                </button>
 
-                <button class="BotaoReiniciar"><p>Jogar novamente</p></button>
+                <button class="BotaoReiniciar">
+                    Jogar novamente
+                </button>
 
             </div>
 
@@ -167,7 +246,7 @@
 
     </div>
 
-    <script src = "js/script.js"></script>
-    
+    <script src="js/script.js"></script>
+
 </body>
 </html>
